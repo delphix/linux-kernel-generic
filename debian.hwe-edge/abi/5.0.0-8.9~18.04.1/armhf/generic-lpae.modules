@@ -1830,7 +1830,6 @@ i2c-parport-light
 i2c-pca-platform
 i2c-piix4
 i2c-pxa
-i2c-qcom-cci
 i2c-qcom-geni
 i2c-qup
 i2c-rcar
