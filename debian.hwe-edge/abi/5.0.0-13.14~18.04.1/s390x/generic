@@ -2191,6 +2191,7 @@ EXPORT_SYMBOL net/ceph/libceph 0x00000000	ceph_release_page_vector
 EXPORT_SYMBOL net/ceph/libceph 0x00000000	ceph_release_string
 EXPORT_SYMBOL net/ceph/libceph 0x00000000	ceph_str_hash
 EXPORT_SYMBOL net/ceph/libceph 0x00000000	ceph_str_hash_name
+EXPORT_SYMBOL net/ceph/libceph 0x00000000	ceph_wait_for_latest_osdmap
 EXPORT_SYMBOL net/ceph/libceph 0x00000000	ceph_zero_page_vector_range
 EXPORT_SYMBOL net/ceph/libceph 0x00000000	libceph_compatible
 EXPORT_SYMBOL net/ceph/libceph 0x00000000	osd_req_op_alloc_hint_init
@@ -10038,6 +10039,7 @@ EXPORT_SYMBOL_GPL vmlinux 0x00000000	dma_buf_unmap_attachment
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	dma_buf_vmap
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	dma_buf_vunmap
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	dma_get_required_mask
+EXPORT_SYMBOL_GPL vmlinux 0x00000000	dma_max_mapping_size
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	do_exit
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	do_splice_from
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	do_splice_to
@@ -11552,7 +11554,6 @@ EXPORT_SYMBOL_GPL vmlinux 0x00000000	securityfs_remove
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	sed_ioctl
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	seg6_do_srh_encap
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	seg6_do_srh_inline
-EXPORT_SYMBOL_GPL vmlinux 0x00000000	selinux_is_enabled
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	serdev_controller_add
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	serdev_controller_alloc
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	serdev_controller_remove
