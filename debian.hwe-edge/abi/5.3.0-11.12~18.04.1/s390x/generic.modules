@@ -9,9 +9,12 @@
 act_bpf
 act_connmark
 act_csum
+act_ct
+act_ctinfo
 act_gact
 act_ipt
 act_mirred
+act_mpls
 act_nat
 act_pedit
 act_police
@@ -178,6 +181,7 @@ drbd
 drm
 drm_kms_helper
 drm_panel_orientation_quirks
+drm_vram_helper
 drop_monitor
 dummy
 dummy_stm
@@ -263,6 +267,7 @@ ib_srp
 ib_srpt
 ib_umad
 ib_uverbs
+icp
 icplus
 ifb
 ife
@@ -371,6 +376,7 @@ l2tp_ip
 l2tp_ip6
 l2tp_netlink
 lcs
+libarc4
 libceph
 libcrc32c
 libfc
@@ -446,6 +452,7 @@ netlink_diag
 nf_conncount
 nf_conntrack
 nf_conntrack_amanda
+nf_conntrack_bridge
 nf_conntrack_broadcast
 nf_conntrack_ftp
 nf_conntrack_h323
@@ -524,6 +531,7 @@ nft_hash
 nft_limit
 nft_log
 nft_masq
+nft_meta_bridge
 nft_nat
 nft_numgen
 nft_objref
@@ -537,6 +545,7 @@ nft_reject_inet
 nft_reject_ipv4
 nft_reject_ipv6
 nft_socket
+nft_synproxy
 nft_tproxy
 nft_tunnel
 nft_xfrm
@@ -608,7 +617,6 @@ ofb
 openvswitch
 oprofile
 orangefs
-osst
 overlay
 p8022
 paes_s390
@@ -695,7 +703,6 @@ sch_skbprio
 sch_taprio
 sch_tbf
 sch_teql
-sclp_async
 scm_block
 scsi_debug
 scsi_dh_alua
@@ -721,6 +728,7 @@ shiftfs
 siox-bus-gpio
 siox-core
 sit
+siw
 slicoss
 slim-qcom-ctrl
 slimbus
@@ -731,6 +739,7 @@ smc_diag
 smsc
 smsgiucv_app
 softdog
+spl
 st
 st_drv
 ste10Xp
@@ -784,6 +793,7 @@ team_mode_loadbalance
 team_mode_random
 team_mode_roundrobin
 teranetics
+test_blackhole_dev
 test_bpf
 tgr192
 tipc
@@ -927,13 +937,20 @@ xt_tcpmss
 xt_tcpudp
 xt_time
 xt_u32
+xxhash_generic
 z3fold
+zavl
+zcommon
 zcrypt
 zcrypt_cex2a
 zcrypt_cex2c
 zcrypt_cex4
 zfcp
+zfs
 zlib_deflate
+zlua
+znvpair
 zram
 zstd
 zstd_compress
+zunicode
