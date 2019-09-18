@@ -12,3 +12,13 @@ sed -i /snapdragon/d ${DEBIAN}/etc/getabis
 sed -i '/_snapdragon/d' ${DEBIAN}/rules.d/arm64.mk
 sed -i 's/^\(flavo.*\)\ssnapdragon\(.*\)$/\1\2/' ${DEBIAN}/rules.d/arm64.mk
 rm -f ${DEBIAN}/config/arm64/config.flavour.snapdragon
+
+# Use gzip instead of lz4 for amd64 and i386
+sed -i '/CONFIG_KERNEL_LZ4/d' ${DEBIAN}/config/amd64/config.common.amd64
+sed -i '/CONFIG_KERNEL_LZ4/d' ${DEBIAN}/config/i386/config.common.i386
+sed -i '3aCONFIG_KERNEL_GZIP=y\n# CONFIG_KERNEL_LZ4 is not set' ${DEBIAN}/config/amd64/config.common.amd64
+sed -i '3aCONFIG_KERNEL_GZIP=y\n# CONFIG_KERNEL_LZ4 is not set' ${DEBIAN}/config/i386/config.common.i386
+
+# Use xz instead of lz4 for s390x
+sed -i '/CONFIG_KERNEL_LZ4/d' ${DEBIAN}/config/s390x/config.common.s390x
+sed -i '3aCONFIG_KERNEL_XZ=y\n# CONFIG_KERNEL_LZ4 is not set' ${DEBIAN}/config/s390x/config.common.s390x
