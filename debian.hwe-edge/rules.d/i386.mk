@@ -18,3 +18,4 @@ do_tools_x86	= true
 do_tools_hyperv = true
 do_extras_package = true
 do_dkms_vbox    = true
+skipabi		= true
