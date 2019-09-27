@@ -22,3 +22,17 @@ sed -i '3aCONFIG_KERNEL_GZIP=y\n# CONFIG_KERNEL_LZ4 is not set' ${DEBIAN}/config
 # Use xz instead of lz4 for s390x
 sed -i '/CONFIG_KERNEL_LZ4/d' ${DEBIAN}/config/s390x/config.common.s390x
 sed -i '3aCONFIG_KERNEL_XZ=y\n# CONFIG_KERNEL_LZ4 is not set' ${DEBIAN}/config/s390x/config.common.s390x
+
+# Build i386 for hwe kernels
+echo '12,19c
+do_tools_usbip = true
+do_tools_cpupower = true
+do_tools_perf = true
+do_tools_perf_jvmti = true
+do_tools_bpftool = true
+do_tools_x86 = true
+do_tools_hyperv = true
+do_extras_package = true
+do_dkms_vbox = true
+.
+w' | ed ${DEBIAN}/rules.d/i386.mk
