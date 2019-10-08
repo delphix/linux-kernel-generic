@@ -3,8 +3,8 @@ build_arch	= arm64
 header_arch	= arm64
 defconfig	= defconfig
 flavours	= generic
-build_image	= Image.gz
-kernel_file	= arch/$(build_arch)/boot/Image.gz
+build_image_generic	= Image.gz
+kernel_file_generic	= arch/$(build_arch)/boot/Image.gz
 install_file	= vmlinuz
 no_dumpfile = true
 uefi_signed     = true
@@ -21,4 +21,3 @@ do_tools_bpftool = true
 
 do_dtbs		= true
 do_zfs		= true
-skipabi		= true
