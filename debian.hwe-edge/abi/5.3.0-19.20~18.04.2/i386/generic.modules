@@ -4579,7 +4579,6 @@ snd-sof-intel-bdw
 snd-sof-intel-byt
 snd-sof-intel-hda-common
 snd-sof-intel-ipc
-snd-sof-nocodec
 snd-sof-xtensa-dsp
 snd-sonicvibes
 snd-sscape
