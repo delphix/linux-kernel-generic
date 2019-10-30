@@ -5361,7 +5361,6 @@ EXPORT_SYMBOL sound/soc/sof/snd-sof 0x00000000	sof_io_write64
 EXPORT_SYMBOL sound/soc/sof/snd-sof 0x00000000	sof_ipc_tx_message
 EXPORT_SYMBOL sound/soc/sof/snd-sof 0x00000000	sof_mailbox_read
 EXPORT_SYMBOL sound/soc/sof/snd-sof 0x00000000	sof_mailbox_write
-EXPORT_SYMBOL sound/soc/sof/snd-sof-nocodec 0x00000000	sof_nocodec_setup
 EXPORT_SYMBOL sound/synth/emux/snd-emux-synth 0x00000000	snd_emux_free
 EXPORT_SYMBOL sound/synth/emux/snd-emux-synth 0x00000000	snd_emux_lock_voice
 EXPORT_SYMBOL sound/synth/emux/snd-emux-synth 0x00000000	snd_emux_new
@@ -7101,6 +7100,7 @@ EXPORT_SYMBOL vmlinux 0x00000000	generic_copy_file_range
 EXPORT_SYMBOL vmlinux 0x00000000	generic_delete_inode
 EXPORT_SYMBOL vmlinux 0x00000000	generic_end_io_acct
 EXPORT_SYMBOL vmlinux 0x00000000	generic_error_remove_page
+EXPORT_SYMBOL vmlinux 0x00000000	generic_fadvise
 EXPORT_SYMBOL vmlinux 0x00000000	generic_file_direct_write
 EXPORT_SYMBOL vmlinux 0x00000000	generic_file_fsync
 EXPORT_SYMBOL vmlinux 0x00000000	generic_file_llseek
@@ -21869,6 +21869,8 @@ EXPORT_SYMBOL_GPL vmlinux 0x00000000	snmp_get_cpu_field
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	snmp_get_cpu_field64
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	soc_ac97_ops
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	soc_device_match
+EXPORT_SYMBOL_GPL vmlinux 0x00000000	soc_device_register
+EXPORT_SYMBOL_GPL vmlinux 0x00000000	soc_device_unregister
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	sock_diag_check_cookie
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	sock_diag_destroy
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	sock_diag_put_meminfo
