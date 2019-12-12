@@ -848,6 +848,14 @@ EXPORT_SYMBOL drivers/gpu/drm/drm_vram_helper 0x00000000	drm_vram_mm_cleanup
 EXPORT_SYMBOL drivers/gpu/drm/drm_vram_helper 0x00000000	drm_vram_mm_file_operations_mmap
 EXPORT_SYMBOL drivers/gpu/drm/drm_vram_helper 0x00000000	drm_vram_mm_init
 EXPORT_SYMBOL drivers/gpu/drm/drm_vram_helper 0x00000000	drm_vram_mm_mmap
+EXPORT_SYMBOL drivers/gpu/drm/rockchip/rockchipdrm 0x00000000	rockchip_drm_psr_flush_all
+EXPORT_SYMBOL drivers/gpu/drm/rockchip/rockchipdrm 0x00000000	rockchip_drm_psr_inhibit_get
+EXPORT_SYMBOL drivers/gpu/drm/rockchip/rockchipdrm 0x00000000	rockchip_drm_psr_inhibit_get_state
+EXPORT_SYMBOL drivers/gpu/drm/rockchip/rockchipdrm 0x00000000	rockchip_drm_psr_inhibit_put
+EXPORT_SYMBOL drivers/gpu/drm/rockchip/rockchipdrm 0x00000000	rockchip_drm_psr_inhibit_put_state
+EXPORT_SYMBOL drivers/gpu/drm/rockchip/rockchipdrm 0x00000000	rockchip_drm_psr_register
+EXPORT_SYMBOL drivers/gpu/drm/rockchip/rockchipdrm 0x00000000	rockchip_drm_psr_unregister
+EXPORT_SYMBOL drivers/gpu/drm/rockchip/rockchipdrm 0x00000000	rockchip_drm_wait_vact_end
 EXPORT_SYMBOL drivers/gpu/drm/scheduler/gpu-sched 0x00000000	drm_sched_dependency_optimized
 EXPORT_SYMBOL drivers/gpu/drm/scheduler/gpu-sched 0x00000000	drm_sched_entity_destroy
 EXPORT_SYMBOL drivers/gpu/drm/scheduler/gpu-sched 0x00000000	drm_sched_entity_fini
@@ -6934,7 +6942,6 @@ EXPORT_SYMBOL vmlinux 0x00000000	devm_ioport_unmap
 EXPORT_SYMBOL vmlinux 0x00000000	devm_ioremap
 EXPORT_SYMBOL vmlinux 0x00000000	devm_ioremap_nocache
 EXPORT_SYMBOL vmlinux 0x00000000	devm_ioremap_resource
-EXPORT_SYMBOL vmlinux 0x00000000	devm_ioremap_uc
 EXPORT_SYMBOL vmlinux 0x00000000	devm_ioremap_wc
 EXPORT_SYMBOL vmlinux 0x00000000	devm_iounmap
 EXPORT_SYMBOL vmlinux 0x00000000	devm_kvasprintf
@@ -7208,7 +7215,6 @@ EXPORT_SYMBOL vmlinux 0x00000000	fb_dealloc_cmap
 EXPORT_SYMBOL vmlinux 0x00000000	fb_default_cmap
 EXPORT_SYMBOL vmlinux 0x00000000	fb_deferred_io_mmap
 EXPORT_SYMBOL vmlinux 0x00000000	fb_destroy_modedb
-EXPORT_SYMBOL vmlinux 0x00000000	fb_edid_add_monspecs
 EXPORT_SYMBOL vmlinux 0x00000000	fb_edid_to_monspecs
 EXPORT_SYMBOL vmlinux 0x00000000	fb_find_best_display
 EXPORT_SYMBOL vmlinux 0x00000000	fb_find_best_mode
@@ -11390,6 +11396,15 @@ EXPORT_SYMBOL_GPL drivers/gnss/gnss-serial 0x00000000	gnss_serial_pm_ops
 EXPORT_SYMBOL_GPL drivers/gnss/gnss-serial 0x00000000	gnss_serial_register
 EXPORT_SYMBOL_GPL drivers/gpio/gpio-max730x 0x00000000	__max730x_probe
 EXPORT_SYMBOL_GPL drivers/gpio/gpio-max730x 0x00000000	__max730x_remove
+EXPORT_SYMBOL_GPL drivers/gpu/drm/bridge/analogix/analogix_dp 0x00000000	analogix_dp_bind
+EXPORT_SYMBOL_GPL drivers/gpu/drm/bridge/analogix/analogix_dp 0x00000000	analogix_dp_disable_psr
+EXPORT_SYMBOL_GPL drivers/gpu/drm/bridge/analogix/analogix_dp 0x00000000	analogix_dp_enable_psr
+EXPORT_SYMBOL_GPL drivers/gpu/drm/bridge/analogix/analogix_dp 0x00000000	analogix_dp_psr_enabled
+EXPORT_SYMBOL_GPL drivers/gpu/drm/bridge/analogix/analogix_dp 0x00000000	analogix_dp_resume
+EXPORT_SYMBOL_GPL drivers/gpu/drm/bridge/analogix/analogix_dp 0x00000000	analogix_dp_start_crc
+EXPORT_SYMBOL_GPL drivers/gpu/drm/bridge/analogix/analogix_dp 0x00000000	analogix_dp_stop_crc
+EXPORT_SYMBOL_GPL drivers/gpu/drm/bridge/analogix/analogix_dp 0x00000000	analogix_dp_suspend
+EXPORT_SYMBOL_GPL drivers/gpu/drm/bridge/analogix/analogix_dp 0x00000000	analogix_dp_unbind
 EXPORT_SYMBOL_GPL drivers/gpu/drm/bridge/synopsys/dw-hdmi 0x00000000	dw_hdmi_audio_disable
 EXPORT_SYMBOL_GPL drivers/gpu/drm/bridge/synopsys/dw-hdmi 0x00000000	dw_hdmi_audio_enable
 EXPORT_SYMBOL_GPL drivers/gpu/drm/bridge/synopsys/dw-hdmi 0x00000000	dw_hdmi_bind
@@ -11408,6 +11423,11 @@ EXPORT_SYMBOL_GPL drivers/gpu/drm/bridge/synopsys/dw-hdmi 0x00000000	dw_hdmi_set
 EXPORT_SYMBOL_GPL drivers/gpu/drm/bridge/synopsys/dw-hdmi 0x00000000	dw_hdmi_set_sample_rate
 EXPORT_SYMBOL_GPL drivers/gpu/drm/bridge/synopsys/dw-hdmi 0x00000000	dw_hdmi_setup_rx_sense
 EXPORT_SYMBOL_GPL drivers/gpu/drm/bridge/synopsys/dw-hdmi 0x00000000	dw_hdmi_unbind
+EXPORT_SYMBOL_GPL drivers/gpu/drm/bridge/synopsys/dw-mipi-dsi 0x00000000	dw_mipi_dsi_bind
+EXPORT_SYMBOL_GPL drivers/gpu/drm/bridge/synopsys/dw-mipi-dsi 0x00000000	dw_mipi_dsi_probe
+EXPORT_SYMBOL_GPL drivers/gpu/drm/bridge/synopsys/dw-mipi-dsi 0x00000000	dw_mipi_dsi_remove
+EXPORT_SYMBOL_GPL drivers/gpu/drm/bridge/synopsys/dw-mipi-dsi 0x00000000	dw_mipi_dsi_set_slave
+EXPORT_SYMBOL_GPL drivers/gpu/drm/bridge/synopsys/dw-mipi-dsi 0x00000000	dw_mipi_dsi_unbind
 EXPORT_SYMBOL_GPL drivers/gpu/drm/drm 0x00000000	drm_bus_flags_from_videomode
 EXPORT_SYMBOL_GPL drivers/gpu/drm/drm 0x00000000	drm_class_device_register
 EXPORT_SYMBOL_GPL drivers/gpu/drm/drm 0x00000000	drm_class_device_unregister
@@ -11458,6 +11478,9 @@ EXPORT_SYMBOL_GPL drivers/gpu/drm/pl111/pl111_drm 0x00000000	pl111_versatile_ini
 EXPORT_SYMBOL_GPL drivers/gpu/drm/rcar-du/rcar_lvds 0x00000000	rcar_lvds_clk_disable
 EXPORT_SYMBOL_GPL drivers/gpu/drm/rcar-du/rcar_lvds 0x00000000	rcar_lvds_clk_enable
 EXPORT_SYMBOL_GPL drivers/gpu/drm/rcar-du/rcar_lvds 0x00000000	rcar_lvds_dual_link
+EXPORT_SYMBOL_GPL drivers/gpu/drm/rockchip/rockchipdrm 0x00000000	rockchip_rgb_fini
+EXPORT_SYMBOL_GPL drivers/gpu/drm/rockchip/rockchipdrm 0x00000000	rockchip_rgb_init
+EXPORT_SYMBOL_GPL drivers/gpu/drm/rockchip/rockchipdrm 0x00000000	vop_component_ops
 EXPORT_SYMBOL_GPL drivers/gpu/drm/ttm/ttm 0x00000000	ttm_dma_page_alloc_debugfs
 EXPORT_SYMBOL_GPL drivers/gpu/drm/ttm/ttm 0x00000000	ttm_dma_populate
 EXPORT_SYMBOL_GPL drivers/gpu/drm/ttm/ttm 0x00000000	ttm_dma_unpopulate
@@ -13145,6 +13168,8 @@ EXPORT_SYMBOL_GPL drivers/net/dsa/realtek-smi 0x00000000	rtl8366_vlan_del
 EXPORT_SYMBOL_GPL drivers/net/dsa/realtek-smi 0x00000000	rtl8366_vlan_filtering
 EXPORT_SYMBOL_GPL drivers/net/dsa/realtek-smi 0x00000000	rtl8366_vlan_prepare
 EXPORT_SYMBOL_GPL drivers/net/dsa/realtek-smi 0x00000000	rtl8366rb_variant
+EXPORT_SYMBOL_GPL drivers/net/ethernet/arc/arc_emac 0x00000000	arc_emac_probe
+EXPORT_SYMBOL_GPL drivers/net/ethernet/arc/arc_emac 0x00000000	arc_emac_remove
 EXPORT_SYMBOL_GPL drivers/net/ethernet/mellanox/mlx4/mlx4_core 0x00000000	__mlx4_cmd
 EXPORT_SYMBOL_GPL drivers/net/ethernet/mellanox/mlx4/mlx4_core 0x00000000	__mlx4_register_mac
 EXPORT_SYMBOL_GPL drivers/net/ethernet/mellanox/mlx4/mlx4_core 0x00000000	__mlx4_replace_mac
@@ -17238,6 +17263,7 @@ EXPORT_SYMBOL_GPL sound/soc/codecs/snd-soc-da7219 0x00000000	da7219_aad_init
 EXPORT_SYMBOL_GPL sound/soc/codecs/snd-soc-da7219 0x00000000	da7219_aad_jack_det
 EXPORT_SYMBOL_GPL sound/soc/codecs/snd-soc-es8328 0x00000000	es8328_probe
 EXPORT_SYMBOL_GPL sound/soc/codecs/snd-soc-es8328 0x00000000	es8328_regmap_config
+EXPORT_SYMBOL_GPL sound/soc/codecs/snd-soc-max98090 0x00000000	max98090_mic_detect
 EXPORT_SYMBOL_GPL sound/soc/codecs/snd-soc-nau8824 0x00000000	nau8824_enable_jack_detect
 EXPORT_SYMBOL_GPL sound/soc/codecs/snd-soc-pcm1789-codec 0x00000000	pcm1789_common_exit
 EXPORT_SYMBOL_GPL sound/soc/codecs/snd-soc-pcm1789-codec 0x00000000	pcm1789_common_init
@@ -17258,6 +17284,8 @@ EXPORT_SYMBOL_GPL sound/soc/codecs/snd-soc-rl6231 0x00000000	rl6231_calc_dmic_cl
 EXPORT_SYMBOL_GPL sound/soc/codecs/snd-soc-rl6231 0x00000000	rl6231_get_clk_info
 EXPORT_SYMBOL_GPL sound/soc/codecs/snd-soc-rl6231 0x00000000	rl6231_get_pre_div
 EXPORT_SYMBOL_GPL sound/soc/codecs/snd-soc-rl6231 0x00000000	rl6231_pll_calc
+EXPORT_SYMBOL_GPL sound/soc/codecs/snd-soc-rt5514-spi 0x00000000	rt5514_spi_burst_read
+EXPORT_SYMBOL_GPL sound/soc/codecs/snd-soc-rt5514-spi 0x00000000	rt5514_spi_burst_write
 EXPORT_SYMBOL_GPL sound/soc/codecs/snd-soc-rt5645 0x00000000	rt5645_sel_asrc_clk_src
 EXPORT_SYMBOL_GPL sound/soc/codecs/snd-soc-rt5645 0x00000000	rt5645_set_jack_detect
 EXPORT_SYMBOL_GPL sound/soc/codecs/snd-soc-rt5663 0x00000000	rt5663_sel_asrc_clk_src
@@ -17370,6 +17398,7 @@ EXPORT_SYMBOL_GPL sound/soc/qcom/snd-soc-lpass-cpu 0x00000000	asoc_qcom_lpass_cp
 EXPORT_SYMBOL_GPL sound/soc/qcom/snd-soc-lpass-cpu 0x00000000	asoc_qcom_lpass_cpu_platform_probe
 EXPORT_SYMBOL_GPL sound/soc/qcom/snd-soc-lpass-cpu 0x00000000	asoc_qcom_lpass_cpu_platform_remove
 EXPORT_SYMBOL_GPL sound/soc/qcom/snd-soc-lpass-platform 0x00000000	asoc_qcom_lpass_platform_register
+EXPORT_SYMBOL_GPL sound/soc/rockchip/snd-soc-rockchip-pcm 0x00000000	rockchip_pcm_platform_register
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-acpi 0x00000000	snd_soc_acpi_codec_list
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-acpi 0x00000000	snd_soc_acpi_find_machine
 EXPORT_SYMBOL_GPL sound/soc/snd-soc-acpi 0x00000000	snd_soc_acpi_find_package_from_hid
@@ -18617,6 +18646,7 @@ EXPORT_SYMBOL_GPL vmlinux 0x00000000	clk_get_rate
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	clk_get_scaled_duty_cycle
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	clk_gpio_gate_ops
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	clk_gpio_mux_ops
+EXPORT_SYMBOL_GPL vmlinux 0x00000000	clk_half_divider_ops
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	clk_has_parent
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	clk_hw_get_flags
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	clk_hw_get_name
@@ -19317,6 +19347,8 @@ EXPORT_SYMBOL_GPL vmlinux 0x00000000	devlink_region_destroy
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	devlink_region_shapshot_id_get
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	devlink_region_snapshot_create
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	devlink_register
+EXPORT_SYMBOL_GPL vmlinux 0x00000000	devlink_reload_disable
+EXPORT_SYMBOL_GPL vmlinux 0x00000000	devlink_reload_enable
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	devlink_resource_occ_get_register
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	devlink_resource_occ_get_unregister
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	devlink_resource_register
@@ -19364,6 +19396,7 @@ EXPORT_SYMBOL_GPL vmlinux 0x00000000	devm_hwspin_lock_request_specific
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	devm_hwspin_lock_unregister
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	devm_i2c_new_dummy_device
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	devm_init_badblocks
+EXPORT_SYMBOL_GPL vmlinux 0x00000000	devm_ioremap_uc
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	devm_irq_alloc_generic_chip
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	devm_irq_setup_generic_chip
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	devm_kasprintf
@@ -21249,6 +21282,7 @@ EXPORT_SYMBOL_GPL vmlinux 0x00000000	pci_msi_unmask_irq
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	pci_num_vf
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	pci_pasid_features
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	pci_power_names
+EXPORT_SYMBOL_GPL vmlinux 0x00000000	pci_pr3_present
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	pci_prg_resp_pasid_required
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	pci_probe_reset_bus
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	pci_probe_reset_slot
@@ -22033,6 +22067,13 @@ EXPORT_SYMBOL_GPL vmlinux 0x00000000	rio_unmap_outb_region
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	rio_unregister_driver
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	rio_unregister_mport
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	rio_unregister_scan
+EXPORT_SYMBOL_GPL vmlinux 0x00000000	rockchip_pcie_cfg_configuration_accesses
+EXPORT_SYMBOL_GPL vmlinux 0x00000000	rockchip_pcie_deinit_phys
+EXPORT_SYMBOL_GPL vmlinux 0x00000000	rockchip_pcie_disable_clocks
+EXPORT_SYMBOL_GPL vmlinux 0x00000000	rockchip_pcie_enable_clocks
+EXPORT_SYMBOL_GPL vmlinux 0x00000000	rockchip_pcie_get_phys
+EXPORT_SYMBOL_GPL vmlinux 0x00000000	rockchip_pcie_init_port
+EXPORT_SYMBOL_GPL vmlinux 0x00000000	rockchip_pcie_parse_dt
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	root_device_unregister
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	round_jiffies
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	round_jiffies_relative
