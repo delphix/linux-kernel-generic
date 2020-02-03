@@ -407,11 +407,11 @@ CONFIG_CRYPTO_DEV_CCP_CRYPTO                    policy<{'amd64': 'm', 'arm64': '
 CONFIG_CRYPTO_DEV_SP_PSP                        policy<{'amd64': 'y'}>
 CONFIG_CRYPTO_DEV_MXS_DCP                       policy<{'arm64': 'n', 'armhf-generic': 'n'}>
 CONFIG_CRYPTO_DEV_QAT_DH895xCC                  policy<{'amd64': 'm', 'i386': 'm'}>
-CONFIG_CRYPTO_DEV_QAT_C3XXX                     policy<{'amd64': 'n', 'i386': 'n'}>
-CONFIG_CRYPTO_DEV_QAT_C62X                      policy<{'amd64': 'n', 'i386': 'n'}>
+CONFIG_CRYPTO_DEV_QAT_C3XXX                     policy<{'amd64': 'm', 'i386': 'm'}>
+CONFIG_CRYPTO_DEV_QAT_C62X                      policy<{'amd64': 'm', 'i386': 'm'}>
 CONFIG_CRYPTO_DEV_QAT_DH895xCCVF                policy<{'amd64': 'm', 'i386': 'm'}>
-CONFIG_CRYPTO_DEV_QAT_C3XXXVF                   policy<{'amd64': 'n', 'i386': 'n'}>
-CONFIG_CRYPTO_DEV_QAT_C62XVF                    policy<{'amd64': 'n', 'i386': 'n'}>
+CONFIG_CRYPTO_DEV_QAT_C3XXXVF                   policy<{'amd64': 'm', 'i386': 'm'}>
+CONFIG_CRYPTO_DEV_QAT_C62XVF                    policy<{'amd64': 'm', 'i386': 'm'}>
 CONFIG_CAVIUM_CPT                               policy<{'arm64': 'm'}>
 CONFIG_CRYPTO_DEV_NITROX_CNN55XX                policy<{'amd64': 'm', 'arm64': 'm', 'ppc64el': 'm', 's390x': 'n'}>
 CONFIG_CRYPTO_DEV_CAVIUM_ZIP                    policy<{'arm64': 'm'}>
@@ -2763,6 +2763,7 @@ CONFIG_VIRTIO_IOMMU                             policy<{'arm64': 'y'}>
 #
 CONFIG_IPMMU_VMSA				note<LP:1718734>
 CONFIG_ARM_SMMU_DISABLE_BYPASS_BY_DEFAULT       mark<ENFORCED> note<LP:1845820>
+CONFIG_IOMMU_DEBUGFS                            mark<ENFORCED> note<Should not be enabled in production, LP #1861057>
 
 # Menu: Device Drivers >> IOMMU Hardware Support >> Generic IOMMU Pagetable Support
 CONFIG_IOMMU_IO_PGTABLE_LPAE                    policy<{'arm64': 'y', 'armhf': 'y'}>
@@ -7921,6 +7922,8 @@ CONFIG_SND_SOC_SOF_HDA_LINK                     mark<ENFORCED> note<LP:#1848490>
 CONFIG_SND_SOC_SOF_HDA_LINK                     policy<{'amd64': 'y', 'i386': 'y'}>
 CONFIG_SND_SOC_SOF_HDA_AUDIO_CODEC              mark<ENFORCED> note<LP:#1848490>
 CONFIG_SND_SOC_SOF_HDA_AUDIO_CODEC              policy<{'amd64': 'y', 'i386': 'y'}>
+CONFIG_SND_SOC_SOF_HDA_COMMON_HDMI_CODEC        mark<ENFORCED> note<LP:#1855666>
+CONFIG_SND_SOC_SOF_HDA_COMMON_HDMI_CODEC        policy<{'amd64': 'y', 'i386': 'y'}>
 
 
 # Menu: Device Drivers >> Sound card support >> Advanced Linux Sound Architecture >> ALSA for SoC audio support >> Intel ASoC SST drivers >> Intel Machine drivers
@@ -8255,7 +8258,8 @@ CONFIG_SND_X86                                  policy<{'amd64': 'y', 'i386': 'y
 CONFIG_HDMI_LPE_AUDIO                           policy<{'amd64': 'm', 'i386': 'm'}>
 
 # Menu: Device Drivers >> SoundWire support
-CONFIG_SOUNDWIRE                                policy<{'amd64': 'y', 'arm64': 'y', 'armhf': 'y', 'i386': 'y', 'ppc64el': 'y', 's390x': 'y'}>
+CONFIG_SOUNDWIRE                                mark<ENFORCED> note<LP:1855685>
+CONFIG_SOUNDWIRE                                policy<{'amd64': 'm', 'arm64': 'm', 'armhf': 'm', 'i386': 'm', 'ppc64el': 'm', 's390x': '-'}>
 CONFIG_SOUNDWIRE_INTEL                          policy<{'amd64': 'm', 'i386': 'm'}>
 
 # Menu: Device Drivers >> Staging drivers
