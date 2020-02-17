@@ -8078,6 +8078,8 @@ CONFIG_SND_AC97_POWER_SAVE_DEFAULT              policy<{'amd64': '0', 'arm64': '
 
 # Menu: Device Drivers >> Sound card support >> Advanced Linux Sound Architecture >> HD-Audio
 CONFIG_SND_HDA_INTEL                            policy<{'amd64': 'm', 'arm64': 'm', 'armhf': 'm', 'i386': 'm', 'ppc64el': 'm'}>
+CONFIG_SND_HDA_INTEL_DETECT_DMIC                policy<{'amd64': 'y', 'arm64': 'y', 'armhf': 'y', 'i386': 'y', 'ppc64el': 'y'}>
+CONFIG_SND_HDA_INTEL_DETECT_DMIC                note<LP:1837828>
 CONFIG_SND_HDA_TEGRA                            policy<{'armhf-generic': 'm'}>
 CONFIG_SND_HDA_HWDEP                            policy<{'amd64': 'y', 'arm64': 'y', 'armhf': 'y', 'i386': 'y', 'ppc64el': 'y'}>
 CONFIG_SND_HDA_RECONFIG                         policy<{'amd64': 'y', 'arm64': 'y', 'armhf': 'y', 'i386': 'y', 'ppc64el': 'y'}>
@@ -8215,6 +8217,8 @@ CONFIG_SND_VIA82XX_MODEM                        policy<{'amd64': 'm', 'arm64': '
 CONFIG_SND_VIRTUOSO                             policy<{'amd64': 'm', 'arm64': 'm', 'armhf': 'm', 'i386': 'm', 'ppc64el': 'm'}>
 CONFIG_SND_VX222                                policy<{'amd64': 'm', 'arm64': 'm', 'armhf': 'm', 'i386': 'm', 'ppc64el': 'm'}>
 CONFIG_SND_YMFPCI                               policy<{'amd64': 'm', 'arm64': 'm', 'armhf': 'm', 'i386': 'm', 'ppc64el': 'm'}>
+CONFIG_SND_INTEL_NHLT                           policy<{'amd64': 'm', 'arm64': 'm', 'armhf': 'm', 'i386': 'm', 'ppc64el': 'm'}>
+CONFIG_SND_INTEL_NHLT                           note<LP:1837828>
 
 # Menu: Device Drivers >> Sound card support >> Advanced Linux Sound Architecture >> PCMCIA sound devices
 CONFIG_SND_PCMCIA                               policy<{'amd64': 'y', 'i386': 'y'}>
@@ -12641,7 +12645,6 @@ CONFIG_FORTIFY_SOURCE                           policy<{'amd64': 'y', 'arm64': '
 CONFIG_STATIC_USERMODEHELPER                    policy<{'amd64': 'n', 'arm64': 'n', 'armhf': 'n', 'i386': 'n', 'ppc64el': 'n', 's390x': 'n'}>
 CONFIG_LOCK_DOWN_KERNEL                         policy<{'amd64': 'y', 'arm64': 'y', 'armhf': 'y', 'i386': 'y', 'ppc64el': 'n', 's390x': 'y'}>
 CONFIG_LOCK_DOWN_KERNEL_FORCE                   policy<{'amd64': 'n', 'arm64': 'n', 'armhf': 'n', 'i386': 'n', 's390x': 'n'}>
-CONFIG_ALLOW_LOCKDOWN_LIFT_BY_SYSRQ             policy<{'amd64': 'y', 'i386': 'y'}>
 CONFIG_LOCK_DOWN_IN_EFI_SECURE_BOOT             policy<{'amd64': 'y', 'arm64': 'y', 'armhf': 'y', 'i386': 'y'}>
 CONFIG_LSM                                      policy<{'amd64': '"yama,integrity,apparmor"', 'arm64': '"yama,integrity,apparmor"', 'armhf': '"yama,integrity,apparmor"', 'i386': '"yama,integrity,apparmor"', 'ppc64el': '"yama,integrity,apparmor"', 's390x': '"yama,integrity,apparmor"'}>
 #
