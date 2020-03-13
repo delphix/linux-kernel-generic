@@ -1,3 +1,9 @@
+linux-hwe-5.4 (5.4.0-24.26~18.04.2) bionic; urgency=medium
+
+  * Empty entry
+
+ -- Andrea Righi <andrea.righi@canonical.com>  Thu, 12 Mar 2020 13:27:06 +0100
+
 linux-hwe-edge (5.3.0-24.26~18.04.2) bionic; urgency=medium
 
   * bionic/linux-hwe-edge: 5.3.0-24.26~18.04.2 -proposed tracker (LP: #1854020)
