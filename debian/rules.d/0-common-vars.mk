@@ -138,10 +138,10 @@ stampdir	:= $(CURDIR)/debian/stamps
 # are places that you'll find linux-image hard coded, but I guess thats OK since the
 # assumption that the binary package always starts with linux-image will never change.
 #
-bin_pkg_name_signed=linux-image-$(abi_release)
-bin_pkg_name_unsigned=linux-image-unsigned-$(abi_release)
-mods_pkg_name=linux-modules-$(abi_release)
-mods_extra_pkg_name=linux-modules-extra-$(abi_release)
+bin_pkg_name_signed=linux-hwe-5.4-image-$(abi_release)
+bin_pkg_name_unsigned=linux-hwe-5.4-image-unsigned-$(abi_release)
+mods_pkg_name=linux-hwe-5.4-modules-$(abi_release)
+mods_extra_pkg_name=linux-hwe-5.4-modules-extra-$(abi_release)
 bldinfo_pkg_name=linux-buildinfo-$(abi_release)
 hdrs_pkg_name=linux-headers-$(abi_release)
 indep_hdrs_pkg_name=linux-headers-$(abi_release)
@@ -200,10 +200,10 @@ else
 endif
 tools_pkg_name=$(src_pkg_name)-tools-$(abi_release)
 tools_common_pkg_name=$(src_pkg_name)-tools-common
-tools_flavour_pkg_name=linux-tools-$(abi_release)
+tools_flavour_pkg_name=linux-hwe-5.4-tools-$(abi_release)
 cloud_pkg_name=$(src_pkg_name)-cloud-tools-$(abi_release)
 cloud_common_pkg_name=$(src_pkg_name)-cloud-tools-common
-cloud_flavour_pkg_name=linux-cloud-tools-$(abi_release)
+cloud_flavour_pkg_name=linux-hwe-5.4-cloud-tools-$(abi_release)
 hosttools_pkg_name=$(src_pkg_name)-tools-host
 
 # The general flavour specific image package.

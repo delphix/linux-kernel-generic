@@ -6,7 +6,7 @@ ifeq ($(disable_d_i),)
 		do-binary-udebs
 endif
 
-do-binary-udebs: linux_udeb_name=$(shell if echo $(src_pkg_name)|egrep -q '(linux-lts|linux-hwe)'; then echo $(src_pkg_name); else echo linux; fi)
+do-binary-udebs: linux_udeb_name=$(shell if echo $(src_pkg_name)|egrep -q '(linux-lts|linux-hwe)'; then echo $(src_pkg_name); else echo linux-hwe-5.4; fi)
 do-binary-udebs: debian/control
 	@echo Debug: $@
 	dh_testdir
@@ -19,10 +19,10 @@ do-binary-udebs: debian/control
 	for f in $$imagelist; do \
 	  i=$(release)-$(abinum)-$$f; \
           for f in \
-		../linux-image-$$i\_$(release)-$(revision)_${arch}.deb \
-		../linux-image-unsigned-$$i\_$(release)-$(revision)_${arch}.deb \
-		../linux-modules-$$i\_$(release)-$(revision)_${arch}.deb \
-		../linux-modules-extra-$$i\_$(release)-$(revision)_${arch}.deb; \
+		../linux-hwe-5.4-image-$$i\_$(release)-$(revision)_${arch}.deb \
+		../linux-hwe-5.4-image-unsigned-$$i\_$(release)-$(revision)_${arch}.deb \
+		../linux-hwe-5.4-modules-$$i\_$(release)-$(revision)_${arch}.deb \
+		../linux-hwe-5.4-modules-extra-$$i\_$(release)-$(revision)_${arch}.deb; \
 	  do \
 		  [ -f $$f ] && dpkg -x $$f debian/d-i-${arch}; \
 	  done; \
