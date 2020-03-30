@@ -54,12 +54,12 @@ Vcs-Git: git://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux/+git/=SERIE
 XS-Testsuite: autopkgtest
 #XS-Testsuite-Depends: gcc-4.7 binutils
 
-Package: linux-hwe-5.4-source-PKGVER
+Package: SRCPKGNAME-source-PKGVER
 Build-Profiles: <!stage1>
 Architecture: all
 Section: devel
 Priority: optional
-Provides: linux-hwe-5.4-source, linux-hwe-5.4-source-3
+Provides: SRCPKGNAME-source
 Depends: ${misc:Depends}, binutils, bzip2, coreutils
 Recommends: libc-dev, gcc, make
 Suggests: libncurses-dev | ncurses-dev, kernel-package, libqt3-dev
@@ -75,10 +75,10 @@ Description: Linux kernel source for version PKGVER with Ubuntu patches
  been designed to ease the task of creating kernel image packages.
  .
  If you are simply trying to build third-party modules for your kernel,
- you do not want this package. Install the appropriate linux-headers
+ you do not want this package. Install the appropriate SRCPKGNAME-headers
  package instead.
 
-Package: linux-headers-PKGVER-ABINUM
+Package: SRCPKGNAME-headers-PKGVER-ABINUM
 Build-Profiles: <!stage1>
 Architecture: all
 Multi-Arch: foreign
@@ -90,27 +90,50 @@ Description: Header files related to Linux kernel version PKGVER
  that want the latest kernel headers. Please read
  /usr/share/doc/SRCPKGNAME-headers-PKGVER-ABINUM/debian.README.gz for details
 
+Package: SRCPKGNAME-tools-common
+Build-Profiles: <!stage1>
+Architecture: all
+Multi-Arch: foreign
+Section: kernel
+Priority: optional
+Depends: ${misc:Depends}, lsb-release
+Description: Linux kernel version specific tools for version PKGVER
+ This package provides the architecture independent parts for kernel
+ version locked tools (such as perf and x86_energy_perf_policy) for
+ version PGKVER.
+
 Package: SRCPKGNAME-tools-PKGVER-ABINUM
 Build-Profiles: <!stage1>
 Architecture: i386 amd64 armhf arm64 ppc64el s390x
 Section: devel
 Priority: optional
-Depends: ${misc:Depends}, ${shlibs:Depends}, linux-hwe-5.4-tools-common
+Depends: ${misc:Depends}, ${shlibs:Depends}, SRCPKGNAME-tools-common
 Description: Linux kernel version specific tools for version PKGVER-ABINUM
  This package provides the architecture dependant parts for kernel
  version locked tools (such as perf and x86_energy_perf_policy) for
  version PKGVER-ABINUM on
  =HUMAN=.
- You probably want to install linux-hwe-5.4-tools-PKGVER-ABINUM-<flavour>.
+ You probably want to install SRCPKGNAME-tools-PKGVER-ABINUM-<flavour>.
+
+Package: SRCPKGNAME-cloud-tools-common
+Build-Profiles: <!stage1>
+Architecture: all
+Multi-Arch: foreign
+Section: kernel
+Priority: optional
+Depends: ${misc:Depends}
+Description: Linux kernel version specific cloud tools for version PKGVER
+ This package provides the architecture independent parts for kernel
+ version locked tools for cloud tools for version PGKVER.
 
 Package: SRCPKGNAME-cloud-tools-PKGVER-ABINUM
 Build-Profiles: <!stage1>
 Architecture: i386 amd64 armhf
 Section: devel
 Priority: optional
-Depends: ${misc:Depends}, ${shlibs:Depends}, linux-hwe-5.4-cloud-tools-common
+Depends: ${misc:Depends}, ${shlibs:Depends}, SRCPKGNAME-cloud-tools-common
 Description: Linux kernel version specific cloud tools for version PKGVER-ABINUM
  This package provides the architecture dependant parts for kernel
  version locked tools for cloud tools for version PKGVER-ABINUM on
  =HUMAN=.
- You probably want to install linux-hwe-5.4-cloud-tools-PKGVER-ABINUM-<flavour>.
+ You probably want to install SRCPKGNAME-cloud-tools-PKGVER-ABINUM-<flavour>.
