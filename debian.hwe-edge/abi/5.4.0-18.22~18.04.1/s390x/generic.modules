@@ -26,8 +26,6 @@ act_tunnel_key
 act_vlan
 adiantum
 aegis128
-aegis128l
-aegis256
 aes_s390
 aes_ti
 af_alg
@@ -182,7 +180,6 @@ drm
 drm_kms_helper
 drm_panel_orientation_quirks
 drm_vram_helper
-drop_monitor
 dummy
 dummy_stm
 dwc-xlgmac
@@ -432,8 +429,6 @@ mlxsw_core
 mlxsw_pci
 monreader
 monwriter
-morus1280
-morus640
 mpls_gso
 mpls_iptunnel
 mpls_router
@@ -629,7 +624,6 @@ pkcs7_test_key
 pkcs8_key_parser
 pkey
 pktgen
-pm-notifier-error-inject
 pnet
 poly1305_generic
 pps_core
@@ -663,7 +657,6 @@ rds
 rds_rdma
 rds_tcp
 realtek
-remoteproc
 rmd128
 rmd160
 rmd256
@@ -954,3 +947,17 @@ zram
 zstd
 zstd_compress
 zunicode
+intel_th_msu_sink
+erofs
+mlxsw_switchib
+sha3_256_s390
+objagg
+essiv
+dm-clone
+mlxsw_spectrum
+mlxsw_switchx2
+virtiofs
+parman
+sha3_512_s390
+adin
+libdes
