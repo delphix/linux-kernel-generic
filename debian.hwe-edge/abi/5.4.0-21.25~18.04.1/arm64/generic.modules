@@ -5955,7 +5955,7 @@ snd-soc-rockchip-spdif
 libdes
 sun4i-csi
 fsia6b
-snd-intel-nhlt
+snd-intel-dspcfg
 arc_emac
 qnoc-qcs404
 dwmac-rk

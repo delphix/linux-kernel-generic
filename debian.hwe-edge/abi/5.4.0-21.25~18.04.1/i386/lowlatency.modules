@@ -4521,7 +4521,7 @@ snd-soc-xlnx-spdif
 snd-soc-xtfpga-i2s
 snd-soc-zx-aud96p22
 snd-sof
-snd-intel-nhlt
+snd-intel-dspcfg
 snd-sof-intel-byt
 snd-sof-intel-hda
 snd-sof-intel-hda-common
