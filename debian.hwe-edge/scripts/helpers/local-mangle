@@ -23,6 +23,14 @@ sed -i '3aCONFIG_KERNEL_GZIP=y\n# CONFIG_KERNEL_LZ4 is not set' ${DEBIAN}/config
 sed -i '/CONFIG_KERNEL_LZ4/d' ${DEBIAN}/config/s390x/config.common.s390x
 sed -i '3aCONFIG_KERNEL_XZ=y\n# CONFIG_KERNEL_LZ4 is not set' ${DEBIAN}/config/s390x/config.common.s390x
 
+# Use the options with the bionic compiler
+sed -i 's/# CONFIG_TUNE_Z13 is not set/CONFIG_TUNE_Z13=y/' ${DEBIAN}/config/config.common.ubuntu
+sed -i 's/CONFIG_TUNE_Z15=y/# CONFIG_TUNE_Z15 is not set/' ${DEBIAN}/config/config.common.ubuntu
+sed -i 's/CONFIG_MARCH_Z15_TUNE=y/CONFIG_MARCH_Z13_TUNE=y/' ${DEBIAN}/config/config.common.ubuntu
+
+sed -i "s/CONFIG_TUNE_Z13                                 policy<{'s390x': 'n'}>/CONFIG_TUNE_Z13                                 policy<{'s390x': 'y'}>/" ${DEBIAN}/config/annotations
+sed -i "s/CONFIG_TUNE_Z15                                 policy<{'s390x': 'y'}>/CONFIG_TUNE_Z15                                 policy<{'s390x': 'n'}>/" ${DEBIAN}/config/annotations
+
 # Build i386 for hwe kernels
 echo '12,19c
 do_tools_usbip = true
