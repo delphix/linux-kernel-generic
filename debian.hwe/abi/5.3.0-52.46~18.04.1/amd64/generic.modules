@@ -689,7 +689,6 @@ cdc_subset
 cdns-csi2rx
 cdns-csi2tx
 cdns-pltfrm
-cec-gpio
 ceph
 cfag12864b
 cfag12864bfb
@@ -4200,6 +4199,7 @@ snd-indigodj
 snd-indigodjx
 snd-indigoio
 snd-indigoiox
+snd-intel-dspcfg
 snd-intel-sst-acpi
 snd-intel-sst-core
 snd-intel-sst-pci
