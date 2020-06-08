@@ -1,9 +1,9 @@
 repo_list=(
-	"http://archive.ubuntu.com/ubuntu/pool/main/l/linux-hwe-edge"
-	"http://ports.ubuntu.com/ubuntu-ports/pool/main/l/linux-hwe-edge"
-	"http://archive.ubuntu.com/ubuntu/pool/universe/l/linux-hwe-edge"
-	"http://ports.ubuntu.com/ubuntu-ports/pool/universe/l/linux-hwe-edge"
-	"http://ppa.launchpad.net/canonical-kernel-team/ppa/ubuntu/pool/main/l/linux-hwe-edge"
+	"http://archive.ubuntu.com/ubuntu/pool/main/l/linux-hwe-5.4"
+	"http://ports.ubuntu.com/ubuntu-ports/pool/main/l/linux-hwe-5.4"
+	"http://archive.ubuntu.com/ubuntu/pool/universe/l/linux-hwe-5.4"
+	"http://ports.ubuntu.com/ubuntu-ports/pool/universe/l/linux-hwe-5.4"
+	"http://ppa.launchpad.net/canonical-kernel-team/ppa/ubuntu/pool/main/l/linux-hwe-5.4"
 )
 
 package_prefixes linux-buildinfo
