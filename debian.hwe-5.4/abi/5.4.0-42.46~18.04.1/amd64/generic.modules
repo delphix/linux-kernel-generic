@@ -59,7 +59,7 @@ acenic
 acer-wireless
 acer-wmi
 acerhdf
-acp3x-rn
+snd-acp3x-rn
 acp_audio_dma
 acpi-als
 acpi_configfs
