@@ -1991,7 +1991,6 @@ intel-ishtp-loader
 intel-lpss
 intel-lpss-acpi
 intel-lpss-pci
-intel-rapl-perf
 intel-rng
 intel-rst
 intel-smartconnect
@@ -3543,6 +3542,7 @@ raid6_pq
 raid_class
 rainshadow-cec
 ramoops
+rapl
 rave-sp
 rave-sp-backlight
 rave-sp-pwrbutton
