@@ -1996,7 +1996,6 @@ intel-lpss
 intel-lpss-acpi
 intel-lpss-pci
 intel-mid_wdt
-intel-rapl-perf
 intel-rng
 intel-rst
 intel-smartconnect
@@ -3574,6 +3573,7 @@ raid6_pq
 raid_class
 rainshadow-cec
 ramoops
+rapl
 rave-sp
 rave-sp-backlight
 rave-sp-pwrbutton
