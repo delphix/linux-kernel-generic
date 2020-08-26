@@ -39,6 +39,10 @@ sed -i "s/CONFIG_STACKPROTECTOR_PER_TASK                  policy<{'arm64': 'y'}>
 sed -i "s/CONFIG_TUNE_Z13                                 policy<{'s390x': 'n'}>/CONFIG_TUNE_Z13                                 policy<{'s390x': 'y'}>/" ${DEBIAN}/config/annotations
 sed -i "s/CONFIG_TUNE_Z15                                 policy<{'s390x': 'y'}>/CONFIG_TUNE_Z15                                 policy<{'s390x': 'n'}>/" ${DEBIAN}/config/annotations
 
+# Focal does not build for i386 and thus not care. This option was made only available for
+# 64bit/amd64 builds.
+sed -i "s/CONFIG_INTEL_IOMMU_SVM                          policy<{'amd64': 'y', 'i386': 'y'}>/CONFIG_INTEL_IOMMU_SVM                          policy<{'amd64': 'y'}>/" ${DEBIAN}/config/annotations
+
 # Build i386 for hwe kernels
 echo '12,19c
 do_tools_usbip = true
