@@ -59,7 +59,6 @@ acenic
 acer-wireless
 acer-wmi
 acerhdf
-snd-acp3x-rn
 acp_audio_dma
 acpi-als
 acpi_configfs
@@ -4146,6 +4145,7 @@ snd
 snd-ac97-codec
 snd-acp3x-pcm-dma
 snd-acp3x-pdm-dma
+snd-acp3x-rn
 snd-ad1889
 snd-ak4113
 snd-ak4114
