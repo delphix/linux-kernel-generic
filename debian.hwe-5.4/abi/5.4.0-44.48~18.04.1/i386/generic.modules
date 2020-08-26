@@ -66,7 +66,6 @@ acenic
 acer-wireless
 acer-wmi
 acerhdf
-snd-acp3x-rn
 acp_audio_dma
 acpi-als
 acpi_configfs
@@ -694,7 +693,6 @@ cdns-csi2tx
 cdns-pltfrm
 cdns3
 cdns3-pci-wrap
-cec-gpio
 ceph
 cfag12864b
 cfag12864bfb
@@ -4182,6 +4180,7 @@ snd
 snd-ac97-codec
 snd-acp3x-pcm-dma
 snd-acp3x-pdm-dma
+snd-acp3x-rn
 snd-ad1816a
 snd-ad1848
 snd-ad1889
