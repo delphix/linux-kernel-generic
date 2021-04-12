@@ -10401,7 +10401,6 @@ EXPORT_SYMBOL	 vmlinux 0xdf52def1	ZSTD_DStreamInSize
 EXPORT_SYMBOL	 vmlinux 0xdf54a8f7	netlink_unregister_notifier
 EXPORT_SYMBOL	 vmlinux 0xdf61f13d	key_validate
 EXPORT_SYMBOL	 vmlinux 0xdf76392f	key_type_keyring
-EXPORT_SYMBOL	 vmlinux 0xdf863d70	follow_pte_pmd
 EXPORT_SYMBOL	 vmlinux 0xdf8c695a	__ndelay
 EXPORT_SYMBOL	 vmlinux 0xdf8d781f	acpi_update_all_gpes
 EXPORT_SYMBOL	 vmlinux 0xdf929370	fs_overflowgid
@@ -18778,7 +18777,6 @@ EXPORT_SYMBOL_GPL	 vmlinux 0x27553437	sata_scr_write_flush
 EXPORT_SYMBOL_GPL	 vmlinux 0x27586e5a	__vfs_setxattr_locked
 EXPORT_SYMBOL_GPL	 vmlinux 0x275aeba6	rio_dma_prep_slave_sg
 EXPORT_SYMBOL_GPL	 vmlinux 0x275e22e6	efivar_entry_set_get_size
-EXPORT_SYMBOL_GPL	 vmlinux 0x276c013f	xhci_init_driver
 EXPORT_SYMBOL_GPL	 vmlinux 0x2773c485	__wake_up_locked
 EXPORT_SYMBOL_GPL	 vmlinux 0x2776e025	percpu_down_write
 EXPORT_SYMBOL_GPL	 vmlinux 0x27884274	device_match_name
@@ -19438,6 +19436,7 @@ EXPORT_SYMBOL_GPL	 vmlinux 0x4648b2aa	phy_gbit_fibre_features
 EXPORT_SYMBOL_GPL	 vmlinux 0x465a3991	lwtunnel_input
 EXPORT_SYMBOL_GPL	 vmlinux 0x4665fa19	is_dock_device
 EXPORT_SYMBOL_GPL	 vmlinux 0x466891bb	acpi_dma_request_slave_chan_by_name
+EXPORT_SYMBOL_GPL	 vmlinux 0x466ee1fc	xhci_init_driver
 EXPORT_SYMBOL_GPL	 vmlinux 0x467fc8d6	unuse_mm
 EXPORT_SYMBOL_GPL	 vmlinux 0x46858a28	ata_sff_qc_issue
 EXPORT_SYMBOL_GPL	 vmlinux 0x4685be23	usb_enable_intel_xhci_ports
@@ -20412,6 +20411,7 @@ EXPORT_SYMBOL_GPL	 vmlinux 0x73b98231	asymmetric_key_generate_id
 EXPORT_SYMBOL_GPL	 vmlinux 0x73d69364	ring_buffer_change_overwrite
 EXPORT_SYMBOL_GPL	 vmlinux 0x740ba754	usb_hcd_pci_probe
 EXPORT_SYMBOL_GPL	 vmlinux 0x74146d27	ipv6_opt_accepted
+EXPORT_SYMBOL_GPL	 vmlinux 0x741b96a3	follow_pte
 EXPORT_SYMBOL_GPL	 vmlinux 0x7428da55	bpf_prog_select_runtime
 EXPORT_SYMBOL_GPL	 vmlinux 0x742abaca	fuse_get_unique
 EXPORT_SYMBOL_GPL	 vmlinux 0x743266e5	tpm_try_get_ops
