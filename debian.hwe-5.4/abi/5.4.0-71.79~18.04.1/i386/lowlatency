@@ -9436,7 +9436,6 @@ EXPORT_SYMBOL	 vmlinux 0xb52ee8be	intel_gtt_clear_range
 EXPORT_SYMBOL	 vmlinux 0xb5339615	get_agp_version
 EXPORT_SYMBOL	 vmlinux 0xb53f2810	tcp_sockets_allocated
 EXPORT_SYMBOL	 vmlinux 0xb5672bd4	udp_sendmsg
-EXPORT_SYMBOL	 vmlinux 0xb570bbbe	follow_pte_pmd
 EXPORT_SYMBOL	 vmlinux 0xb57343c2	frontswap_shrink
 EXPORT_SYMBOL	 vmlinux 0xb5757856	cpu_rmap_update
 EXPORT_SYMBOL	 vmlinux 0xb579ebcf	bprm_change_interp
@@ -18962,7 +18961,6 @@ EXPORT_SYMBOL_GPL	 vmlinux 0x30e1ec25	apei_map_generic_address
 EXPORT_SYMBOL_GPL	 vmlinux 0x310928e1	iommu_capable
 EXPORT_SYMBOL_GPL	 vmlinux 0x31128b8e	hv_remove_kexec_handler
 EXPORT_SYMBOL_GPL	 vmlinux 0x31266931	con_debug_leave
-EXPORT_SYMBOL_GPL	 vmlinux 0x31289dc3	xhci_init_driver
 EXPORT_SYMBOL_GPL	 vmlinux 0x312b4bb0	pci_ioremap_wc_bar
 EXPORT_SYMBOL_GPL	 vmlinux 0x312bc340	__spi_register_driver
 EXPORT_SYMBOL_GPL	 vmlinux 0x3140cb78	sync_page_io
@@ -21553,6 +21551,7 @@ EXPORT_SYMBOL_GPL	 vmlinux 0xa63c1c24	uart_get_rs485_mode
 EXPORT_SYMBOL_GPL	 vmlinux 0xa641d54a	devlink_reload_disable
 EXPORT_SYMBOL_GPL	 vmlinux 0xa6521af3	debugfs_remove
 EXPORT_SYMBOL_GPL	 vmlinux 0xa678c079	crypto_ahash_digest
+EXPORT_SYMBOL_GPL	 vmlinux 0xa681a4ad	follow_pte
 EXPORT_SYMBOL_GPL	 vmlinux 0xa6824f3f	__tracepoint_br_fdb_external_learn_add
 EXPORT_SYMBOL_GPL	 vmlinux 0xa68297ef	acpi_set_modalias
 EXPORT_SYMBOL_GPL	 vmlinux 0xa684f8e9	device_init_wakeup
@@ -23456,6 +23455,7 @@ EXPORT_SYMBOL_GPL	 vmlinux 0xfced7c8b	gpiochip_add_pin_range
 EXPORT_SYMBOL_GPL	 vmlinux 0xfd054273	skb_cow_data
 EXPORT_SYMBOL_GPL	 vmlinux 0xfd08de1d	spi_mem_get_name
 EXPORT_SYMBOL_GPL	 vmlinux 0xfd26f285	raw_seq_start
+EXPORT_SYMBOL_GPL	 vmlinux 0xfd537b53	xhci_init_driver
 EXPORT_SYMBOL_GPL	 vmlinux 0xfd59954a	sk_psock_init
 EXPORT_SYMBOL_GPL	 vmlinux 0xfd712575	usb_submit_urb
 EXPORT_SYMBOL_GPL	 vmlinux 0xfd7243c7	erst_disable
