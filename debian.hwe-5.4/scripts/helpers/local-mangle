@@ -43,6 +43,12 @@ sed -i "s/CONFIG_TUNE_Z15                                 policy<{'s390x': 'y'}>
 # 64bit/amd64 builds.
 sed -i "s/CONFIG_INTEL_IOMMU_SVM                          policy<{'amd64': 'y', 'i386': 'y'}>/CONFIG_INTEL_IOMMU_SVM                          policy<{'amd64': 'y'}>/" ${DEBIAN}/config/annotations
 
+# UBUNTU_ODM_DRIVERS is disabled for linux-hwe-5.4 in Bionic. Remove the enforecement
+# for the drivers which depend on it.
+sed -i "/CONFIG_MFD_AHC1EC0                              policy<{'amd64': 'm'}>/d" ${DEBIAN}/config/annotations
+sed -i "/CONFIG_SENSORS_AHC1EC0_HWMON                    policy<{'amd64': 'm'}>/d" ${DEBIAN}/config/annotations
+sed -i "/CONFIG_AHC1EC0_WDT                              policy<{'amd64': 'm'}>/d" ${DEBIAN}/config/annotations
+
 # Build i386 for hwe kernels
 echo '12,19c
 do_tools_usbip = true
