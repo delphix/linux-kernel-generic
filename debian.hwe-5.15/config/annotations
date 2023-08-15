@@ -1,7 +1,7 @@
 # Menu: HEADER
 # FORMAT: 4
-# ARCH: amd64 arm64 armhf ppc64el s390x
-# FLAVOUR: amd64-generic amd64-lowlatency arm64-generic arm64-generic-64k arm64-lowlatency arm64-lowlatency-64k armhf-generic armhf-generic-lpae ppc64el-generic s390x-generic
+# ARCH: amd64
+# FLAVOUR: amd64-generic
 
 include "../../debian.master/config/annotations"
 
