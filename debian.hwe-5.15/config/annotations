@@ -48,3 +48,5 @@ CONFIG_PAHOLE_VERSION                           policy<{'amd64': '121', 'arm64':
 CONFIG_SECURITY_DMESG_RESTRICT                  policy<{'amd64': 'n', 'arm64': 'n', 'armhf': 'n', 'ppc64el': 'n', 's390x': 'n'}>
 CONFIG_SLS                                      policy<{'amd64': '-'}>
 CONFIG_ZERO_CALL_USED_REGS                      policy<{'amd64': '-', 'arm64': '-', 'armhf': '-', 'ppc64el': '-', 's390x': '-'}>
+
+include "../../debian.delphix/config/annotations"
