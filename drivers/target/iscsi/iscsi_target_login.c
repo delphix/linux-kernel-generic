@@ -647,6 +647,7 @@ int iscsit_start_kthreads(struct iscsi_conn *conn)
 		ret = PTR_ERR(conn->tx_thread);
 		goto out_bitmap;
 	}
+	set_user_nice(conn->tx_thread, -10);
 	wait_for_completion(&conn->kthr_start_comp);
 	conn->tx_thread_active = true;
 
@@ -657,6 +658,7 @@ int iscsit_start_kthreads(struct iscsi_conn *conn)
 		ret = PTR_ERR(conn->rx_thread);
 		goto out_tx;
 	}
+	set_user_nice(conn->rx_thread, -10);
 	wait_for_completion(&conn->kthr_start_comp);
 	conn->rx_thread_active = true;
 
