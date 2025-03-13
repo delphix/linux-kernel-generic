@@ -3806,7 +3806,7 @@ CONFIG_DEBUG_CGROUP_REF                         policy<{'amd64': 'n', 'arm64': '
 CONFIG_DEBUG_CLOSURES                           policy<{'amd64': 'n', 'arm64': 'n', 'armhf': 'n', 'ppc64el': 'n', 'riscv64': 'n', 's390x': 'n'}>
 CONFIG_DEBUG_DEVRES                             policy<{'amd64': 'n', 'arm64': 'n', 'armhf': 'n', 'ppc64el': 'n', 'riscv64': 'n', 's390x': 'n'}>
 CONFIG_DEBUG_DRIVER                             policy<{'amd64': 'n', 'arm64': 'n', 'armhf': 'n', 'ppc64el': 'n', 'riscv64': 'n', 's390x': 'n'}>
-CONFIG_DEBUG_EFI                                policy<{'arm64': 'n'}>
+CONFIG_DEBUG_EFI                                policy<{'amd64': 'y', 'arm64': 'n'}>
 CONFIG_DEBUG_ENTRY                              policy<{'amd64': 'n', 's390x': 'n'}>
 CONFIG_DEBUG_FORCE_FUNCTION_ALIGN_64B           policy<{'amd64': 'n', 'arm64': 'n', 'ppc64el': 'n', 'riscv64': 'n', 's390x': 'n'}>
 CONFIG_DEBUG_FORCE_WEAK_PER_CPU                 policy<{'amd64': 'n', 'arm64': 'n', 'armhf': 'n', 'ppc64el': 'n', 'riscv64': 'n', 's390x': 'n'}>
@@ -4758,7 +4758,7 @@ CONFIG_EFI_SECRET                               policy<{'amd64': 'm'}>
 CONFIG_EFI_SOFT_RESERVE                         policy<{'amd64': 'y', 'arm64': 'y'}>
 CONFIG_EFI_STUB                                 policy<{'amd64': 'y', 'arm64': 'y', 'armhf': 'y', 'riscv64': 'y'}>
 CONFIG_EFI_TEST                                 policy<{'amd64': 'm', 'arm64': 'm', 'armhf': 'm', 'riscv64': 'm'}>
-CONFIG_EFI_VARS_PSTORE                          policy<{'amd64': 'm', 'arm64': 'm', 'armhf': 'm', 'riscv64': 'm'}>
+CONFIG_EFI_VARS_PSTORE                          policy<{'amd64': 'y', 'arm64': 'm', 'armhf': 'm', 'riscv64': 'm'}>
 CONFIG_EFI_VARS_PSTORE_DEFAULT_DISABLE          policy<{'amd64': 'n', 'arm64': 'n', 'armhf': 'n', 'riscv64': 'n'}>
 CONFIG_EFS_FS                                   policy<{'amd64': 'm', 'arm64': 'm', 'armhf': 'm', 'ppc64el': 'm', 'riscv64': 'm', 's390x': 'n'}>
 CONFIG_EINT_MTK                                 policy<{'arm64': 'y', 'armhf': 'y'}>
