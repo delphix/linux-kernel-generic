@@ -46,6 +46,12 @@ gen_per_flavour () {
 
 	. "${var}"
 
+	# Delphix: drop the linux-main-modules-* packages that do_lmm adds to
+	# linux-modules' Depends. They are built from separate Ubuntu source
+	# packages against Ubuntu's kernel ABI, so nothing can satisfy them for
+	# our kernel, and we use none of those modules (we ship our own zfs).
+	depends=$(sed -E 's/(^|, *)linux-main-modules-[^,]*//g; s/^, *//' <<<"$depends")
+
 	if [ "$provides" != '' ]; then
 		provides+=", "
 	fi
